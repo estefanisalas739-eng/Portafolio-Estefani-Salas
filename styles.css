@@ -1,0 +1,192 @@
+/* Tipografía general */
+body {
+    font-family: 'Merriweather', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* Encabezado */
+header {
+    background-color: #1c2533;
+    color: #ffffff;
+    text-align: center;
+    padding: 3rem 1rem;
+    border-bottom: 4px solid #2f3e5c;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Navegación */
+nav {
+    background-color: #2f3e5c;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #cdd9ed;
+    text-decoration: underline;
+}
+
+/* Secciones principales */
+main {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+    border-radius: 8px;
+}
+
+/* Títulos de sección */
+h3, h4 {
+    color: #1c2533;
+    margin-top: 2.5rem;
+    font-weight: 600;
+}
+
+/* Listas */
+ol, ul {
+    margin-left: 2rem;
+    padding-left: 1rem;
+}
+
+/* Imagen de perfil */
+figure {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+figure img {
+    border-radius: 50%;
+    border: 5px solid #1c2533;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+figure img:hover {
+    transform: scale(1.05);
+}
+
+/* Redes sociales */
+section#redes ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#redes ul li {
+    margin: 0.5rem 0;
+}
+
+section#redes a {
+    color: #2f3e5c;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+section#redes a:hover {
+    color: #1c2533;
+    text-decoration: underline;
+}
+
+/* Aside */
+aside {
+    background-color: #eef1f5;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-left: 5px solid #1c2533;
+    font-style: italic;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    background-color: #2f3e5c;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1c2533;
+}
+
+/* Footer */
+footer {
+    background-color: #1c2533;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #cdd9ed;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    figure img {
+        width: 140px;
+        height: 140px;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+}

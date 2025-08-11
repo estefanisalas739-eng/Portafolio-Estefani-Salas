@@ -1,0 +1,143 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+/* Contenedor principal */
+main.Constancias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjetas */
+.tarjeta {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.tarjeta h2 {
+  font-size: 1.3rem;
+  color: #2980b9;
+  margin-bottom: 10px;
+}
+
+.tarjeta p.resumen {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.tarjeta button.ver-mas {
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.tarjeta button.ver-mas:hover {
+  background-color: #1c5980;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.oculto {
+  display: none;
+}
+
+.modal-contenido {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.modal-contenido img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.modal-contenido h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.modal-contenido p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.modal-contenido ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.cerrar {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.cerrar:hover {
+  color: #e74c3c;
+}

@@ -1,0 +1,106 @@
+/* Tipografía y fondo general */
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f9fafb;
+  padding: 40px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Contenedor del formulario */
+.formulario-container {
+  background-color: #ffffff;
+  padding: 35px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+/* Título del formulario */
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* Etiquetas */
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Campos de entrada */
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fefefe;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  outline: none;
+}
+
+/* Área de texto */
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Botón de envío */
+button {
+  margin-top: 30px;
+  padding: 14px;
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Mensaje de error */
+.error {
+  color: #dc2626;
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 640px) {
+  .formulario-container {
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
